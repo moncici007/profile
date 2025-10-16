@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web3 Builder | 全栈开发者 | DeFi策略师 - moncici的个人主页">
+    <title>Moncici - Web3 Builder & DeFi Strategist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Moncici</div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#experience">经历</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#video">视频</a></li>
+                <li><a href="#articles">文章</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Moncici</span>
+                </h1>
+                <h2 class="hero-subtitle">Web3 Builder | 全栈开发者 | DeFi策略师</h2>
+                <p class="hero-description">
+                    10年互联网大厂经验 · 深耕Web3领域 · 1.4万+ X粉丝 · 1150+ YouTube订阅 · 3000+ Discord社区
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">14K+</div>
+                        <div class="stat-label">X 粉丝</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">1150+</div>
+                        <div class="stat-label">YouTube 订阅</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">3000+</div>
+                        <div class="stat-label">Discord 成员</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">年经验</div>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">联系我</a>
+                    <a href="#projects" class="btn btn-secondary">查看项目</a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:moncici2119@gmail.com" class="social-link" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/moncici_is_girl" target="_blank" class="social-link" aria-label="X (Twitter)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@moncici_girl" target="_blank" class="social-link" aria-label="YouTube">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/moncici007" target="_blank" class="social-link" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://discord.com/channels/1215119263480938496/1360265935180791918" target="_blank" class="social-link" aria-label="Discord">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        拥有<strong>10年顶级互联网大厂经验</strong>的资深技术专家（从软件开发到技术总监），自2023年深度投身Web3领域。
+                    </p>
+                    <p>
+                        兼具强大的工程架构能力与敏锐的链上市场嗅觉。成功从0到1构建了个人Web3品牌，在X平台积累超<strong>1.4万粉丝</strong>、运营YouTube频道持续输出优质内容，以及超过<strong>3000人的Discord社区</strong>。
+                    </p>
+                    <p>
+                        擅长开发自动化交易工具、DeFi套利策略、DEX/CEX API集成与节点运维，致力于利用技术优势在去中心化世界中创造价值。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">核心技能</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>社区与运营</h3>
+                    <ul>
+                        <li><strong>社交媒体：</strong>精通X平台内容创作、粉丝增长与互动策略（从0到1.4万粉丝）</li>
+                        <li><strong>YouTube运营：</strong>持续运营YouTube频道，专注Web3技术教学与市场深度解读，产出高质量视频内容</li>
+                        <li><strong>社区建设：</strong>拥有从零搭建和管理超3000人Discord社区的成功经验，擅长社区激活与运营</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⛓️</div>
+                    <h3>Web3 技术栈</h3>
+                    <ul>
+                        <li><strong>DeFi：</strong>精通DEX/CEX套利策略设计与实现，熟悉AMM机制、流动性池、闪电贷等</li>
+                        <li><strong>开发：</strong>熟练对接各类DEX/CEX API，开发自动化交易脚本、监控工具和数据分析面板</li>
+                        <li><strong>节点：</strong>拥有运行和维护区块链挖矿/验证者节点的实践经验</li>
+                        <li><strong>语言/框架：</strong>Solidity, Python, JavaScript/TypeScript, Node.js, React等</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>传统技术（深厚根基）</h3>
+                    <ul>
+                        <li><strong>软件架构：</strong>丰富的微服务、分布式系统、高并发系统设计与架构经验</li>
+                        <li><strong>工程管理：</strong>全生命周期项目管理、团队领导与技术规划能力</li>
+                        <li><strong>开发：</strong>精通多种后端、前端语言与框架</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">经历</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>个人Web3项目与探索</h3>
+                        <p class="timeline-date">2023年 - 至今</p>
+                        <div class="timeline-details">
+                            <h4>Web3内容创作者与社区领袖</h4>
+                            <ul>
+                                <li>在X平台持续分享Web3技术见解、市场分析和工具使用心得，在一年内零成本自然增长至<strong>14,000+</strong>粉丝，建立了个人技术影响力品牌</li>
+                                <li>持续运营YouTube频道<strong>@moncici_girl</strong>，通过高质量的Web3教程和市场分析建立技术影响力</li>
+                                <li>创建并运营一个超<strong>3000人</strong>的Discord社区，定期组织AMA、策略分享和技术讨论，形成了高质量的Web3开发者与爱好者交流圈</li>
+                            </ul>
+                            <h4>DeFi套利工具开发</h4>
+                            <ul>
+                                <li>独立设计并开发了多套针对不同市场的自动化套利系统，通过对接Binance, OKX等CEX的API，实现跨市场价差获利</li>
+                            </ul>
+                            <h4>节点运营商</h4>
+                            <ul>
+                                <li>成功运行多个区块链网络的挖矿节点和验证者节点，深入理解节点部署、运维、优化及安全最佳实践</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>技术总监</h3>
+                        <p class="timeline-date">约2018年 - 2023年</p>
+                        <ul>
+                            <li>负责直播产品线的技术总览，领导超过20人的技术团队</li>
+                            <li>主导了从单体架构向微服务云原生架构的演进，系统可用性达到99.99%</li>
+                            <li>规划并落地了关键的技术中台项目，提升了整个部门的研发效率和系统稳定性</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>架构师 / 高级软件开发工程师</h3>
+                        <p class="timeline-date">约2013年 - 2018年</p>
+                        <ul>
+                            <li>参与或主导了多个高并发、海量数据的核心系统设计与开发</li>
+                            <li>深入参与系统性能调优、技术选型与攻克复杂技术难题</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">核心项目</h2>
+            <p class="section-subtitle">专注DeFi量化交易与区块链技术</p>
+            <div class="projects-grid">
+                <!-- Perp - 网格交易策略 -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                        <div class="project-badges">
+                            <span class="badge badge-featured">精选</span>
+                            <span class="badge badge-popular">热门</span>
+                        </div>
+                    </div>
+                    <h3>Perp - 网格交易策略</h3>
+                    <p class="project-description">
+                        专业的永续合约网格交易工具，支持 Bumpin 和 Backpack 交易所。实现动态网格策略、自动化交易、风险管理、实时监控等完整功能。内置完善的API安全机制和配置管理系统。
+                    </p>
+                    <div class="project-features">
+                        <span class="feature">✓ 动态网格策略</span>
+                        <span class="feature">✓ 多交易所支持</span>
+                        <span class="feature">✓ 实时监控</span>
+                        <span class="feature">✓ 安全加密</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Grid Trading</span>
+                        <span class="tag">Perpetual Futures</span>
+                        <span class="tag">Quantitative</span>
+                    </div>
+                    <div class="project-stats">
+                        <span class="stat-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                            </svg>
+                            54
+                        </span>
+                        <span class="stat-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/>
+                            </svg>
+                            28 Forks
+                        </span>
+                    </div>
+                    <a href="https://github.com/moncici007/perp" target="_blank" class="btn btn-primary">查看项目</a>
+                </div>
+
+                <!-- Kronos - AI金融模型 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🤖</div>
+                    </div>
+                    <h3>Kronos</h3>
+                    <p class="project-description">
+                        金融市场的语言基础模型。利用先进的AI/ML技术，对金融市场数据进行深度分析和趋势预测，为量化交易提供智能决策支持。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">Financial Analysis</span>
+                        <span class="tag">Time Series</span>
+                    </div>
+                    <div class="project-stats">
+                        <span class="stat-item">⭐ 46</span>
+                        <span class="stat-item">🔱 5 Forks</span>
+                    </div>
+                    <a href="https://github.com/moncici007/Kronos" target="_blank" class="btn btn-secondary">查看项目</a>
+                </div>
+
+                <!-- Quant - 量化交易系统 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📈</div>
+                    </div>
+                    <h3>Quant - 量化交易系统</h3>
+                    <p class="project-description">
+                        完整的量化交易框架，集成策略回测、实盘交易、数据分析等功能。支持多种交易策略和技术指标，为专业交易者打造的一站式量化解决方案。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Backtesting</span>
+                        <span class="tag">Strategy</span>
+                        <span class="tag">Data Analysis</span>
+                    </div>
+                    <div class="project-stats">
+                        <span class="stat-item">⭐ 量化框架</span>
+                        <span class="stat-item">🔥 活跃开发</span>
+                    </div>
+                    <a href="https://github.com/moncici007/quant" target="_blank" class="btn btn-secondary">查看项目</a>
+                </div>
+
+                <!-- Funding Rate - 资金费率监控 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">💰</div>
+                    </div>
+                    <h3>Funding Rate</h3>
+                    <p class="project-description">
+                        实时监控多个交易所的资金费率，捕捉套利机会。提供历史数据分析、费率预警、跨交易所对比等功能，帮助交易者优化持仓成本。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Funding Rate</span>
+                        <span class="tag">Arbitrage</span>
+                        <span class="tag">Monitoring</span>
+                    </div>
+                    <div class="project-stats">
+                        <span class="stat-item">⚡ 实时监控</span>
+                        <span class="stat-item">📡 多交易所</span>
+                    </div>
+                    <a href="https://github.com/moncici007/funding-rate" target="_blank" class="btn btn-secondary">查看项目</a>
+                </div>
+            </div>
+            <div class="more-projects">
+                <a href="https://github.com/moncici007?tab=repositories" target="_blank" class="btn btn-outline">
+                    查看更多项目 (45个仓库) →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video Section -->
+    <section id="video" class="featured-video">
+        <div class="container">
+            <h2 class="section-title">精选视频</h2>
+            <p class="section-subtitle">来自 YouTube 的技术分享</p>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        src="https://www.youtube.com/embed/VRtrbAQ4rs4?start=66" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Web3 技术深度解析</h3>
+                    <p>深入探讨Web3技术栈、DeFi策略和区块链开发实践。通过实战案例分享，帮助开发者快速掌握Web3核心技能。</p>
+                    <a href="https://www.youtube.com/watch?v=VRtrbAQ4rs4&t=66s" target="_blank" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                        在 YouTube 观看
+                    </a>
+                    <a href="https://www.youtube.com/@moncici_girl" target="_blank" class="btn btn-outline" style="margin-left: 12px;">订阅频道</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles">
+        <div class="container">
+            <h2 class="section-title">精选文章</h2>
+            <p class="section-subtitle">来自 X (Twitter) 的技术见解与实战教程</p>
+            <div class="articles-grid">
+                <!-- 文章1: 币圈套利理论篇 -->
+                <div class="article-card">
+                    <div class="article-header">
+                        <span class="article-category">DeFi套利</span>
+                        <span class="article-date">2024</span>
+                    </div>
+                    <h3>币圈套利：如何在加密货币市场中寻找"免费的午餐"？【理论篇】</h3>
+                    <p>套利是金融市场中一种古老而基础的交易策略，其核心原理是利用不同市场或产品之间的价格差异，通过同时买入低价资产和卖出高价资产，在几乎无风险的情况下获取利润...</p>
+                    <a href="https://x.com/moncici_is_girl/status/1913804319067172897" target="_blank" class="article-link">阅读全文 →</a>
+                </div>
+
+                <!-- 文章2: 资金费率套利系统 -->
+                <div class="article-card">
+                    <div class="article-header">
+                        <span class="article-category">量化交易</span>
+                        <span class="article-date">2024</span>
+                    </div>
+                    <h3>无风险资金费率套利系统</h3>
+                    <p>经过假期紧锣密鼓的筹备，资金费率套利系统第一次直播终于准备好了。作为一个免费提供的软件，最重要的是让大家先用起来，一起完善无风险的资金费率套利系统...</p>
+                    <a href="https://x.com/moncici_is_girl/status/1919574994084102471" target="_blank" class="article-link">阅读全文 →</a>
+                </div>
+
+                <!-- 文章3: Cookie首发项目Spark -->
+                <div class="article-card">
+                    <div class="article-header">
+                        <span class="article-category">空投教程</span>
+                        <span class="article-date">2025</span>
+                    </div>
+                    <h3>Cookie首发项目Spark积分空投教程</h3>
+                    <p>最近爆火的 @cookiedotfun 上线了自己合作的第一个项目 @sparkdotfi，Spark的热度一下子就起来了。作为官推的第一个项目，收益应该不会太差。Spark是一个 MakerDAO 推出的去中心化借贷市场...</p>
+                    <a href="https://x.com/moncici_is_girl/status/1926457397817565186" target="_blank" class="article-link">阅读全文 →</a>
+                </div>
+
+                <!-- 文章4: Eclipse挖矿教程 -->
+                <div class="article-card">
+                    <div class="article-header">
+                        <span class="article-category">挖矿教程</span>
+                        <span class="article-date">2024</span>
+                    </div>
+                    <h3>Eclipse $BITZ 挖矿教程（Windows版本）</h3>
+                    <p>$BITZ 是 Eclipse 上的首个 ePOW 代币，任何人都可以参与挖矿，得到了Eclipse的官方支持。网上已经有很多的Linux版本的挖矿教程，鉴于很多的用户都是Windows系统，特意给大家准备了windows版本的挖矿教程...</p>
+                    <a href="https://x.com/moncici_is_girl/status/1911255749596188798" target="_blank" class="article-link">阅读全文 →</a>
+                </div>
+
+                <!-- 文章5: Gensyn节点 -->
+                <div class="article-card">
+                    <div class="article-header">
+                        <span class="article-category">节点运维</span>
+                        <span class="article-date">2024</span>
+                    </div>
+                    <h3>融资4950万美元｜Gensyn节点运行教程</h3>
+                    <p>Gensyn成立于2020年，是一个分布式计算网络，用于训练 AI 模型。该网络使用区块链来验证深度学习任务是否已正确执行。2023年6月A轮融资4300万刀，a16z领投...</p>
+                    <a href="https://x.com/moncici_is_girl/status/1907596890461643163" target="_blank" class="article-link">阅读全文 →</a>
+                </div>
+
+                <!-- 文章6: 英国保号卡 -->
+                <div class="article-card">
+                    <div class="article-header">
+                        <span class="article-category">实用工具</span>
+                        <span class="article-date">2024</span>
+                    </div>
+                    <h3>5英镑拥有一张可用20年的英国保号卡</h3>
+                    <p>注册和使用海外 APP 如 Telegram、Youtube、TikTok 一般需要海外手机号。而作为墙内人，多数是没有的，这篇教程教你低成本拥有海外手机号的方法，可以合规注册海外 APP，能接收短信，还支持购买漫游流量应急...</p>
+                    <a href="https://x.com/moncici_is_girl/status/1904694256092275177" target="_blank" class="article-link">阅读全文 →</a>
+                </div>
+            </div>
+            <div class="more-articles">
+                <a href="https://x.com/moncici_is_girl" target="_blank" class="btn btn-outline">
+                    访问我的 X 主页 →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <p class="section-subtitle">期待与您交流合作</p>
+            <div class="contact-grid">
+                <a href="mailto:moncici2119@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>moncici2119@gmail.com</p>
+                </a>
+                <a href="https://x.com/moncici_is_girl" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </div>
+                    <h3>X (Twitter)</h3>
+                    <p>@moncici_is_girl</p>
+                    <span class="follower-count">14K+ 粉丝</span>
+                </a>
+                <a href="https://www.youtube.com/@moncici_girl" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </div>
+                    <h3>YouTube</h3>
+                    <p>@moncici_girl</p>
+                    <span class="follower-count">1150+ 订阅</span>
+                </a>
+                <a href="https://github.com/moncici007" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>@moncici007</p>
+                    <span class="follower-count">45 个仓库</span>
+                </a>
+                <a href="https://discord.com/channels/1215119263480938496/1360265935180791918" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                        </svg>
+                    </div>
+                    <h3>Discord 社区</h3>
+                    <p>加入我们</p>
+                    <span class="follower-count">3000+ 成员</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Moncici. All rights reserved.</p>
+            <p class="footer-note">Built with passion for Web3 🚀</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
